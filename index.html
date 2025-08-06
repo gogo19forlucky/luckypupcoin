@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$LUCKYPUP - แบ่งปันอาหารเพื่อน</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Prompt', sans-serif;
+      background: linear-gradient(to bottom right, #fffef5, #e9f7ff);
+      color: #333;
+    }
+    header {
+      background-color: #ffd36a;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #444;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    .lang-switch button {
+      margin-left: 0.5rem;
+      padding: 0.3rem 0.8rem;
+      border: none;
+      background-color: #ffd36a;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1rem;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('[data-th], [data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+    window.onload = () => switchLang('th');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>$LUCKYPUP</h1>
+    <div class="lang-switch">
+      <button onclick="switchLang('th')">ไทย</button>
+      <button onclick="switchLang('en')">EN</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="section">
+      <h2 data-th="กองทุนลัคกี้ แบ่งปันอาหารเพื่อน" data-en="Lucky Fund - Sharing Food for Friends"></h2>
+      <p data-th="โปรเจกต์นี้ทำเพื่ช่วยเหลือสุนัข ป่วยหรือไร้บ้าน หลักการแนวคิด ท่านสามารถบริจาคให้กองทุนนี้ได้โดยการกดซื้อเหรียญ แล้วท่านจะได้เหรียญ luckypup ถือไว้ เหรียญอาจมอบโชคให้ท่านในวันข้างหน้า เมื่อกองทุนนี้เติบโต หรือถ้ากองทุนนี้เติบโตไม่ได้ก็ถือว่าท่านทำบุญ แก่สุุนัขผู้ยากไร้ เหรียญที่ท่านถืออยู่ ชื่อว่าการแบ่งปัน เมื่อเพื่อนสุนัขของท่านขาดแคลนสามารถมาขายเหรียญคืนเพื่อนำไปซื้ออาหารได้ (ราคาขึ้นอยู่กับมูลค่าเหรียญในตลาดขณะนั้น)" 
+        data-en="This project helps sick or homeless dogs. You can donate to this fund by purchasing LUCKYPUP tokens. These tokens may bring you luck in the future when the fund grows. If not, your donation still helps poor dogs. The token represents sharing. When a dog owner is in need, they can sell the token back to buy food (depending on the market value at that time)."></p>
+    </div>
+
+    <div class="section">
+      <h2 data-th="วิธีการบริจาค" data-en="How to Donate"></h2>
+      <p data-th="เพียงแค่เติมเหรียญ Sol ในกระเป๋า แล้วกดซื้อเหรียญ luckypup หากยังไม่มีกระเป๋า กดสมัครที่นี่ฟรี (okx) หากไม่มี account Exchange เพื่อซื้อเหรียญหรือไม่มีกระเป๋า ทักหาคนนี้ เพื่อนซื้อเหรียญ (อาจแพงกว่าตลาดนิดหน่อยและมีค่าแก๊สโอนเหรียญ)"
+        data-en="Just add SOL tokens to your wallet and click buy LUCKYPUP. If you don’t have a wallet, register one for free (e.g., OKX). If you don’t have an exchange account or wallet, contact our helper to purchase tokens (a small fee may apply)."></p>
+    </div>
+  </main>
+
+  <footer>
+    Ⓒ 2025 LUCKYPUP. All rights reserved.
+  </footer>
+</body>
+</html>
